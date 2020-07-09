@@ -1,0 +1,9 @@
+.but{
+    background-color: green;
+    color: red;
+}
+
+.but:hover{
+    background-color: red;
+    color: green;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Child from "./child";
+import basics from "./basics.css"
 
 class Basics extends Component {
     state = {
@@ -26,7 +27,7 @@ class Basics extends Component {
     render() {
         return (
             <div className="container">
-                  <button onClick={() => this.applyEvent()}>Event</button>
+                  <button className="but" onClick={() => this.applyEvent()}>Click Event</button>
                 {
                     this.state.show ?
                         <div>
