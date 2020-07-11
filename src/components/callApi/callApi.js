@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import ChildApi from  "./childApi";
 
 class CallApi extends Component {
     state = {
@@ -23,11 +24,15 @@ class CallApi extends Component {
     render() {
         return (
             <div>
+                <div>
                 {this.state.posts.map(post => <div>
                     <h5>{post.id}</h5>
-                    <div>"{post.title}"</div>
+                    <ChildApi title={post.title} />
                     <div>{post.body}</div>
+
                 </div>)}
+                </div>
+                
             </div>
         );
     }
